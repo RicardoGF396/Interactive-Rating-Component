@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+    --orange-color: hsl(25, 97%, 53%);
+    --white-color: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+/*
+    Colors
+   orange = #FC7613 
+   background = #141519
+   card background = #202731
+   rating background = #262F38
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body{
+    background-color: var(--very-dark-blue);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card, #card-2{
+    width: 350px;
+    padding: 1.5rem;
+    background-color: #202731;
+    border-radius: 1rem;
+}
+
+.star, .rate{
+    background-color: #262F38;
+    width: 48px;
+    height: 48px;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.title{
+    color: var(--white-color);
+    margin-bottom: 1rem;
+}
+
+.text, .rate{
+    color: var(--light-grey);
+}
+
+.text{
+    margin-bottom: 1rem;
+}
+
+#btn{
+    background-color: var(--orange-color);
+    border: none;
+    width: 100%;
+    padding: .8rem 0;
+    border-radius: 3rem;
+    color: white;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+#btn:hover{
+    color: var(--orange-color);
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+
+.rate:hover{
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.rating-value-active {
+    background-color: var(--light-grey);
+    color: var(--white-color);
+}
+
+
+/* Congrats */
+.card_container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selected_rating{
+    background-color: #262F38;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    color: var(--orange-color);
+}
+
+#card-2{
+    display: none;
+}
